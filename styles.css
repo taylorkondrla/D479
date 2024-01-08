@@ -1,0 +1,550 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+     scroll-behavior: smooth;;
+}
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+    background-color: #f0e7d8;
+    
+}
+
+header{
+    color: white;
+    background-color: black;
+    padding: 10px;
+}
+
+header h1 {
+    float: left;
+    color: #f0e7d8;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: #f0e7d8;
+}
+
+nav {
+    overflow: hidden;
+    margin: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    float: right;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: #f0e7d8;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.container {
+    position: relative;
+}
+
+#slideshow-container {
+    max-width: 80%; 
+    margin: 0 auto; 
+    overflow: hidden; 
+    display: flex;  
+    z-index: 1;
+    position: relative;
+}
+  
+ 
+  #slideshow-container img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    
+}
+
+main {
+    text-align: center;
+}
+
+
+.intro {
+    background-color: white;
+    width: 60%;
+    max-height: 70%; 
+    overflow: auto;
+    margin: 40px auto;
+    padding: 30px;
+    color: #3d3d3d;
+    font-size: 1.1rem;
+    line-height: 1.3;
+    z-index: 2;
+    top: 70%;
+    left: 20%;
+    position: absolute;
+}
+
+#section-containers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 300px;
+}    
+
+#section-containers a {
+    text-decoration: none;
+    color: #b37c17;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.explore-box,
+.restaurants-box,
+.lodging-box {
+    width: 200px; 
+    height: 100%; 
+    margin: 38px; 
+    background-color: white;
+    outline: 2px solid #b37c17; 
+}
+
+.explore-box img,
+.restaurants-box img,
+.lodging-box img {
+    max-width: 100%; /* Ensure the image doesn't exceed the container width */
+    max-height: 100%; /* Ensure the image doesn't exceed the container height */
+    display: block; /* Remove extra space below the image */
+}
+
+.explore-box p,
+.restaurants-box p,
+.lodging-box p {
+    text-align: center;
+    color: #545454;
+    padding: 5px;
+}
+
+footer {
+    background-color: black;
+    color: #b37c17;
+    clear: both; 
+    padding: 10px;
+    clear: both; 
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #b37c17;
+}
+
+#explore-header {
+    background-color: #b37c17;
+    width: 90%;
+    max-width: 800px; 
+    margin: 40px auto;
+    padding: 30px;
+    color: #fff; 
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+#explore-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#explore-header p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+
+#explore-container {
+    display: grid;
+    color: #3d3d3d;
+}
+
+#explore-container h3 {
+    color: #b37c17;
+}
+#explore-container img {
+    width: 60%;
+    margin: 20px;
+}
+
+.beach-container,
+.volcano-container,
+.rainforrest-container,
+.city-container {
+    position: relative;
+}
+
+.beach-img {
+    float: left;
+}
+
+.beach-info {
+    background-color: white;
+    position: absolute;
+    padding: 20px;
+    width: 50%;
+    right: 5%;
+    top: 30%;
+    font-size: 1.2rem;
+}
+
+.volcano-img {
+    float: right;
+}
+
+.volcano-info {
+    float: left;
+    background-color: white;
+    position: absolute;
+    padding: 20px;
+    width: 50%;
+    left: 5%;
+    top: 30%;
+    font-size: 1.2rem;
+}
+
+.rainforrest-img {
+    float: left;
+}
+
+.rainforrest-info {
+    float: right;
+    background-color: white;
+    position: absolute;
+    padding: 20px;
+    width: 50%;
+    right: 5%;
+    top: 30%;
+    font-size: 1.2rem;
+}
+
+.city-img {
+    float: right;
+}
+
+.city-info {
+    float: left;
+    background-color: white;
+    position: absolute;
+    padding: 20px;
+    width: 50%;
+    left: 5%;
+    top: 30%;
+    font-size: 1.2rem;
+}
+
+#restaurant-header {
+    background-color: #b37c17;
+    width: 90%;
+    max-width: 800px; /* Set a max-width for responsiveness */
+    margin: 40px auto;
+    padding: 30px;
+    color: #fff; /* Text color */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+}
+
+#restaurant-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
+}
+
+#restaurant-header p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+
+#restaurant-container {
+    display: grid;
+    color: #3d3d3d;
+}
+
+#restaurant-container h3 {
+    color: #b37c17;
+}
+#restaurant-container img {
+    width: 60%;
+    margin: 20px;
+}
+
+.polynesian-container,
+.french-container,
+.asian-container,
+.american-container {
+    position: relative;
+}
+
+.polynesian-img {
+    float: left;
+}
+
+.polynesian-info {
+    background-color: white;
+    position: absolute;
+    padding: 20px;
+    width: 50%;
+    right: 5%;
+    top: 30%;
+    font-size: 1.2rem;
+}
+
+.french-img {
+    float: right;
+}
+
+.french-info {
+    float: left;
+    background-color: white;
+    position: absolute;
+    padding: 20px;
+    width: 50%;
+    left: 5%;
+    top: 20%;
+    font-size: 1.2rem;
+}
+
+.asian-img {
+    float: left;
+}
+
+.asian-info {
+    float: right;
+    background-color: white;
+    position: absolute;
+    padding: 20px;
+    width: 50%;
+    right: 5%;
+    top: 20%;
+    font-size: 1.2rem;
+}
+
+.american-img {
+    float: right;
+}
+
+.american-info {
+    float: left;
+    background-color: white;
+    position: absolute;
+    padding: 20px;
+    width: 50%;
+    left: 5%;
+    top: 20%;
+    font-size: 1.2rem;
+}
+
+
+
+#lodging-header {
+    background-color: #b37c17;
+    width: 90%;
+    max-width: 800px; /* Set a max-width for responsiveness */
+    margin: 40px auto;
+    padding: 30px;
+    color: #fff; /* Text color */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+}
+
+#lodging-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
+}
+
+#lodging-header p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+
+#lodging-container {
+    display: grid;
+    color: #3d3d3d;
+}
+
+#lodging-container h3 {
+    color: #b37c17;
+}
+#lodging-container img {
+    width: 60%;
+    margin: 20px;
+}
+
+.haven-container,
+.jungle-container,
+.pacific-container,
+.coastal-container {
+    position: relative;
+}
+
+.haven-img {
+    float: left;
+}
+
+.haven-info {
+    background-color: white;
+    position: absolute;
+    padding: 20px;
+    width: 50%;
+    right: 5%;
+    top: 30%;
+    font-size: 1.2rem;
+}
+
+.jungle-img {
+    float: right;
+}
+
+.jungle-info {
+    float: left;
+    background-color: white;
+    position: absolute;
+    padding: 20px;
+    width: 50%;
+    left: 5%;
+    top: 20%;
+    font-size: 1.2rem;
+}
+
+.pacific-img {
+    float: left;
+}
+
+.pacific-info {
+    float: right;
+    background-color: white;
+    position: absolute;
+    padding: 20px;
+    width: 50%;
+    right: 5%;
+    top: 20%;
+    font-size: 1.2rem;
+}
+
+.coastal-img {
+    float: right;
+}
+
+.coastal-info {
+    float: left;
+    background-color: white;
+    position: absolute;
+    padding: 20px;
+    width: 50%;
+    left: 5%;
+    top: 20%;
+    font-size: 1.2rem;
+}
+
+.contact-img {
+    max-width: 70%; 
+    margin: 0 auto; 
+    overflow: hidden; 
+    display: flex;  
+    z-index: 1;
+    position: relative;
+}
+.contact {
+    padding: 50px;
+    text-align: center;
+    color: #3d3d3d;
+    background-color: white;
+    z-index: 2;
+    top: 80%;
+    left: 25%;
+    position: absolute;
+}
+
+#contactform {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 50px;
+    width: 70%;
+    font-size: 1.2rem;
+    color: #3d3d3d;
+}
+
+#submit {
+    font-size: 1.2rem;
+    background-color: #b37c17;
+    color: #3d3d3d;
+    cursor: pointer;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    border: none;
+}
+label {
+    padding: 10px 15px 10px 15px;
+    margin: 10px;
+}
+
+input {
+    background-color: white;
+    padding: 10px 15px 10px 15px;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+}
+input::placeholder {
+    color: #3d3d3d;
+   
+}
+
+#question {
+    border: none;
+    background-color: white;
+    padding: 10px 15px 10px 15px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.sources {
+    font-style: italic;
+    font-size: .8rem;
+}
+
+.faq {
+    margin: 0 auto;
+    background-color: white;
+    width: 75%;
+    color: #3d3d3d;
+    font-size: 1.1rem;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.faq h3 {
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    background-color: #b37c17;
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
